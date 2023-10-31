@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">🤖 Third-year Robotics & Engineering student<br>🚀 Passionate about tech, coding, and robots<br>💡 Exploring the world of circuits and innovation<br>🌟 Let's build a future powered by technology!</p>
+
 
 ###
 
