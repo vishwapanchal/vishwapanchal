@@ -4,11 +4,6 @@
 
 <p align="left">My name is Vishwa Panchal, I am  a Diploma in CSE student from India.</p>
 
-###
-
-<h2 align="left">About me</h2>
-
-###
 
 
 
