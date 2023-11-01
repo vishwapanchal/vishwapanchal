@@ -17,10 +17,10 @@ My name is Vishwa Panchal, and I am a Diploma in CSE student from India.
 
 ## Connect with Me
 
-<p align="center">Have a nice day!!</p>
-
 <div align="center">
   <a href="https://www.linkedin.com/in/thevishwapanchal/" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo" />
   </a>
+
+<p align="center"><h3>Have a nice day!!<h3></p>
 </div>
