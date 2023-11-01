@@ -22,5 +22,6 @@ My name is Vishwa Panchal, and I am a Diploma in CSE student from India.
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo" />
   </a>
 </div>
-<p align="center"><h3>Have a nice day!!<h3></p>
+
+<p align="center"><h3>Have a nice day!!</h3>h3></p>
 
