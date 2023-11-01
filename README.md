@@ -13,9 +13,7 @@ My name is Vishwa Panchal, and I am a Diploma in CSE student from India.
   <!-- Add more tech stack icons here -->
 </div>
 
-## Certifications
 
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b0491d3b-5860-4b63-acad-c01386ae2185" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 ## Connect with Me
 
