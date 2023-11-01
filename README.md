@@ -23,5 +23,5 @@ My name is Vishwa Panchal, and I am a Diploma in CSE student from India.
   </a>
 </div>
 
-<p align="center"><h3>Have a nice day!!</h3>h3></p>
+<p align="center"><h3>Have a nice day!!</h3></p>
 
