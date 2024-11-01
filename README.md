@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">My name is Vishwa Panchal, I am  a Diploma in CSE student from India.</p>
+<p align="left">My name is Vishwa Panchal, I am an Information Science Engineering studying at RVCE</p>
 
 ###
 
