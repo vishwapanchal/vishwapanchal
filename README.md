@@ -25,7 +25,7 @@
 </div>
 
 <div align="center">
-  <a href="https://vishwapanchal.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=flat-square&logo=vercel&logoColor=00D9FF" alt="Portfolio" /></a>
+  <a href="https://thevishwapanchal.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=flat-square&logo=vercel&logoColor=00D9FF" alt="Portfolio" /></a>
   <a href="https://linkedin.com/in/thevishwapanchal"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=flat-square&logo=linkedin&logoColor=00D9FF" alt="LinkedIn" /></a>
   <a href="mailto:thevishwapanchal@gmail.com"><img src="https://img.shields.io/badge/Email-0D1117?style=flat-square&logo=gmail&logoColor=00D9FF" alt="Email" /></a>
 </div>
