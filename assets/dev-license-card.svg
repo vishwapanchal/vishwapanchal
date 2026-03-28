@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1220"/>
+      <stop offset="50%" stop-color="#0d1525"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.5"/>
+      <stop offset="25%" stop-color="#00D9FF" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#7B61FF" stop-opacity="0.3"/>
+      <stop offset="75%" stop-color="#00D9FF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#00D9FF" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="holo-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF0080" stop-opacity="0.4"/>
+      <stop offset="20%" stop-color="#FF8C00" stop-opacity="0.3"/>
+      <stop offset="40%" stop-color="#FFD700" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#00FF88" stop-opacity="0.3"/>
+      <stop offset="80%" stop-color="#00D9FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7B61FF" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="shimmer-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity="0.07"/>
+      <stop offset="55%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes shimmer { 0%{transform:translateX(-300px) rotate(25deg)} 100%{transform:translateX(1000px) rotate(25deg)} }
+    @keyframes holo { 0%,100%{opacity:.25} 50%{opacity:.55} }
+    @keyframes pulse-dot { 0%,100%{r:4;opacity:.6} 50%{r:5.5;opacity:1} }
+    @keyframes scan { 0%{transform:translateY(-20px);opacity:0} 10%,90%{opacity:.12} 100%{transform:translateY(440px);opacity:0} }
+    @keyframes particle { 0%{transform:translateY(0);opacity:0} 15%{opacity:.7} 85%{opacity:.7} 100%{transform:translateY(-420px);opacity:0} }
+    .shimmer{animation:shimmer 4.5s ease-in-out infinite}
+    .holo{animation:holo 3.5s ease-in-out infinite}
+    .dot{animation:pulse-dot 2s ease-in-out infinite}
+    .scan{animation:scan 5s linear infinite}
+    .p{animation:particle 6s linear infinite}
+    .lbl{font:700 9px/1 'Courier New',monospace;fill:#00D9FF;letter-spacing:2px}
+    .val{font:600 14px/1 'Segoe UI',Helvetica,Arial,sans-serif;fill:#e6e6e6}
+    .val-s{font:500 12px/1 'Segoe UI',sans-serif;fill:#8b949e}
+    .mono{font:10px/1 'Courier New',monospace;fill:#555}
+    .tag{font:600 10px/1 'Segoe UI',sans-serif}
+  </style>
+
+  <!-- Shadow -->
+  <rect x="6" y="6" width="688" height="408" rx="18" fill="#000" opacity=".25" filter="url(#shadow)"/>
+
+  <!-- ══ CARD BODY ══ -->
+  <rect width="700" height="420" rx="16" fill="url(#card-bg)"/>
+  <rect x=".5" y=".5" width="699" height="419" rx="16" fill="none" stroke="url(#border-grad)" stroke-width="1.5"/>
+  <rect x="3" y="3" width="694" height="414" rx="14" fill="none" stroke="#fff" stroke-opacity=".03"/>
+
+  <!-- Scan line -->
+  <rect class="scan" x="0" y="0" width="700" height="1.5" rx="1" fill="#00D9FF"/>
+
+  <!-- ══ TOP BAR ══ -->
+  <rect width="700" height="48" rx="16" fill="#00D9FF" fill-opacity=".04"/>
+  <rect y="36" width="700" height="12" fill="#00D9FF" fill-opacity=".04"/>
+  <text x="24" y="31" font-family="'Segoe UI',sans-serif" font-weight="800" font-size="11" fill="#00D9FF" letter-spacing="4">DEVELOPER LICENSE</text>
+  <rect x="565" y="13" width="105" height="22" rx="11" fill="#00D9FF" fill-opacity=".1" stroke="#00D9FF" stroke-opacity=".3" stroke-width=".6"/>
+  <text x="617" y="28" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" font-weight="700" fill="#00D9FF" letter-spacing="1.5">CLOUD &amp; BE</text>
+  <circle class="dot" cx="548" cy="24" r="4" fill="#00FF88" filter="url(#glow)"/>
+  <text x="534" y="28" text-anchor="end" font-family="'Courier New',monospace" font-size="8" fill="#00FF88" letter-spacing="1">ACTIVE</text>
+  <line x1="20" y1="48" x2="680" y2="48" stroke="#00D9FF" stroke-opacity=".1"/>
+
+  <!-- ══ PHOTO ══ -->
+  <rect x="24" y="68" width="100" height="115" rx="8" fill="#080c14" stroke="#00D9FF" stroke-opacity=".2" stroke-width=".8"/>
+  <rect x="25" y="69" width="98" height="36" rx="7" fill="#00D9FF" fill-opacity=".03"/>
+  <text x="74" y="138" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-weight="800" font-size="30" fill="#00D9FF" filter="url(#glow)">VP</text>
+  <text x="74" y="158" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#8b949e">@vishwa</text>
+  <!-- Photo corners -->
+  <g stroke="#00D9FF" stroke-width="1.2" opacity=".35">
+    <line x1="27" y1="73" x2="27" y2="83"/><line x1="27" y1="73" x2="37" y2="73"/>
+    <line x1="121" y1="73" x2="121" y2="83"/><line x1="121" y1="73" x2="111" y2="73"/>
+    <line x1="27" y1="178" x2="27" y2="168"/><line x1="27" y1="178" x2="37" y2="178"/>
+    <line x1="121" y1="178" x2="121" y2="168"/><line x1="121" y1="178" x2="111" y2="178"/>
+  </g>
+
+  <!-- ══ FIELDS ══ -->
+  <text class="lbl" x="150" y="80">NAME</text>
+  <text x="150" y="103" font-family="'Segoe UI',sans-serif" font-weight="800" font-size="22" fill="#fff" letter-spacing="1">VISHWA PANCHAL</text>
+  <text class="lbl" x="150" y="130">ROLE</text>
+  <text class="val" x="150" y="148">Backend Developer &amp; Cloud Architect</text>
+  <text class="lbl" x="150" y="172">LOCATION</text>
+  <text class="val-s" x="150" y="188">India 🇮🇳</text>
+  <text class="lbl" x="360" y="172">ID</text>
+  <text x="360" y="188" font-family="'Courier New',monospace" font-size="12" fill="#8b949e">gh:vishwapanchal</text>
+
+  <!-- ══ DIVIDER ══ -->
+  <line x1="20" y1="205" x2="635" y2="205" stroke="#00D9FF" stroke-opacity=".1" stroke-dasharray="4 4"/>
+
+  <!-- ══ SKILLS ══ -->
+  <text class="lbl" x="24" y="228">ENDORSED SKILLS</text>
+  <g transform="translate(24,238)">
+    <rect x="0" y="0" width="62" height="22" rx="4" fill="#3776AB" fill-opacity=".15" stroke="#3776AB" stroke-opacity=".3" stroke-width=".6"/>
+    <text class="tag" x="31" y="15" text-anchor="middle" fill="#5A9BD5">Python</text>
+    <rect x="70" y="0" width="62" height="22" rx="4" fill="#009688" fill-opacity=".15" stroke="#009688" stroke-opacity=".3" stroke-width=".6"/>
+    <text class="tag" x="101" y="15" text-anchor="middle" fill="#26A69A">FastAPI</text>
+    <rect x="140" y="0" width="48" height="22" rx="4" fill="#FF9900" fill-opacity=".15" stroke="#FF9900" stroke-opacity=".3" stroke-width=".6"/>
+    <text class="tag" x="164" y="15" text-anchor="middle" fill="#FFB347">AWS</text>
+    <rect x="196" y="0" width="60" height="22" rx="4" fill="#2496ED" fill-opacity=".15" stroke="#2496ED" stroke-opacity=".3" stroke-width=".6"/>
+    <text class="tag" x="226" y="15" text-anchor="middle" fill="#5DADE2">Docker</text>
+    <rect x="264" y="0" width="80" height="22" rx="4" fill="#4169E1" fill-opacity=".15" stroke="#4169E1" stroke-opacity=".3" stroke-width=".6"/>
+    <text class="tag" x="304" y="15" text-anchor="middle" fill="#6A8EE6">PostgreSQL</text>
+    <rect x="352" y="0" width="70" height="22" rx="4" fill="#47A248" fill-opacity=".15" stroke="#47A248" stroke-opacity=".3" stroke-width=".6"/>
+    <text class="tag" x="387" y="15" text-anchor="middle" fill="#6BBF6A">MongoDB</text>
+    <rect x="430" y="0" width="62" height="22" rx="4" fill="#D24939" fill-opacity=".15" stroke="#D24939" stroke-opacity=".3" stroke-width=".6"/>
+    <text class="tag" x="461" y="15" text-anchor="middle" fill="#E06B5F">Jenkins</text>
+    <rect x="500" y="0" width="52" height="22" rx="4" fill="#FCC624" fill-opacity=".15" stroke="#FCC624" stroke-opacity=".3" stroke-width=".6"/>
+    <text class="tag" x="526" y="15" text-anchor="middle" fill="#F0D060">Linux</text>
+    <rect x="560" y="0" width="52" height="22" rx="4" fill="#7B61FF" fill-opacity=".15" stroke="#7B61FF" stroke-opacity=".3" stroke-width=".6"/>
+    <text class="tag" x="586" y="15" text-anchor="middle" fill="#9B8FFF">CI/CD</text>
+  </g>
+
+  <!-- ══ DIVIDER 2 ══ -->
+  <line x1="20" y1="278" x2="635" y2="278" stroke="#00D9FF" stroke-opacity=".1" stroke-dasharray="4 4"/>
+
+  <!-- ══ AWS CERTIFICATION ══ -->
+  <text class="lbl" x="24" y="300">CERTIFICATION</text>
+  <!-- Shield badge -->
+  <g transform="translate(44,336)">
+    <path d="M0,-22 L18,-14 L18,6 Q18,22 0,28 Q-18,22 -18,6 L-18,-14 Z" fill="#FF9900" fill-opacity=".1" stroke="#FF9900" stroke-opacity=".45" stroke-width="1"/>
+    <path d="M0,-14 L11,-8 L11,2 Q11,14 0,18 Q-11,14 -11,2 L-11,-8 Z" fill="#FF9900" fill-opacity=".18"/>
+    <path d="M-5,1 L-1,7 L8,-5" fill="none" stroke="#FF9900" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="78" y="322" font-family="'Segoe UI',sans-serif" font-weight="700" font-size="11" fill="#FF9900" letter-spacing="1.5">AWS CERTIFIED</text>
+  <text x="78" y="342" font-family="'Segoe UI',sans-serif" font-weight="600" font-size="14" fill="#FFB347">Solutions Architect — Associate</text>
+  <text x="78" y="360" font-family="'Courier New',monospace" font-size="10" fill="#8b949e">Credential: 108fd17f · Verified ✓</text>
+
+  <!-- Seeking box -->
+  <rect x="440" y="298" width="195" height="68" rx="8" fill="#00D9FF" fill-opacity=".04" stroke="#00D9FF" stroke-opacity=".12" stroke-width=".6"/>
+  <text x="537" y="322" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#00D9FF" letter-spacing="1.5">SEEKING</text>
+  <text x="537" y="342" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#e0e0e0">Backend &amp; Cloud</text>
+  <text x="537" y="358" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" font-weight="600" fill="#8b949e">Internships 🚀</text>
+
+  <!-- ══ BOTTOM BAR ══ -->
+  <line x1="20" y1="382" x2="635" y2="382" stroke="#00D9FF" stroke-opacity=".08"/>
+  <!-- Barcode -->
+  <g transform="translate(24,392)" opacity=".22">
+    <rect width="2" height="14" fill="#8b949e"/><rect x="4" width="1" height="14" fill="#8b949e"/>
+    <rect x="7" width="3" height="14" fill="#8b949e"/><rect x="12" width="1" height="14" fill="#8b949e"/>
+    <rect x="15" width="2" height="14" fill="#8b949e"/><rect x="19" width="1" height="14" fill="#8b949e"/>
+    <rect x="22" width="3" height="14" fill="#8b949e"/><rect x="27" width="1" height="14" fill="#8b949e"/>
+    <rect x="30" width="2" height="14" fill="#8b949e"/><rect x="34" width="1" height="14" fill="#8b949e"/>
+    <rect x="37" width="3" height="14" fill="#8b949e"/><rect x="42" width="1" height="14" fill="#8b949e"/>
+    <rect x="45" width="2" height="14" fill="#8b949e"/><rect x="49" width="1" height="14" fill="#8b949e"/>
+    <rect x="52" width="3" height="14" fill="#8b949e"/><rect x="57" width="2" height="14" fill="#8b949e"/>
+    <rect x="61" width="1" height="14" fill="#8b949e"/><rect x="64" width="2" height="14" fill="#8b949e"/>
+    <rect x="68" width="3" height="14" fill="#8b949e"/><rect x="73" width="1" height="14" fill="#8b949e"/>
+    <rect x="76" width="2" height="14" fill="#8b949e"/><rect x="80" width="1" height="14" fill="#8b949e"/>
+    <rect x="83" width="3" height="14" fill="#8b949e"/><rect x="88" width="2" height="14" fill="#8b949e"/>
+    <rect x="92" width="1" height="14" fill="#8b949e"/>
+  </g>
+  <text class="mono" x="128" y="404">VP-2026-SAA-PROD</text>
+  <text class="mono" x="570" y="404" text-anchor="end">ISSUED 2025 · NO EXPIRY</text>
+
+  <!-- ══ HOLO STRIP ══ -->
+  <rect class="holo" x="644" y="56" width="34" height="320" rx="6" fill="url(#holo-grad)"/>
+  <rect x="644" y="56" width="34" height="320" rx="6" fill="none" stroke="#fff" stroke-opacity=".04"/>
+  <g opacity=".07">
+    <circle cx="661" cy="100" r="8" fill="none" stroke="#fff" stroke-width=".5"/>
+    <circle cx="661" cy="100" r="4" fill="none" stroke="#fff" stroke-width=".5"/>
+    <circle cx="661" cy="160" r="8" fill="none" stroke="#fff" stroke-width=".5"/>
+    <circle cx="661" cy="160" r="4" fill="none" stroke="#fff" stroke-width=".5"/>
+    <circle cx="661" cy="220" r="8" fill="none" stroke="#fff" stroke-width=".5"/>
+    <circle cx="661" cy="220" r="4" fill="none" stroke="#fff" stroke-width=".5"/>
+    <circle cx="661" cy="280" r="8" fill="none" stroke="#fff" stroke-width=".5"/>
+    <circle cx="661" cy="280" r="4" fill="none" stroke="#fff" stroke-width=".5"/>
+    <circle cx="661" cy="340" r="8" fill="none" stroke="#fff" stroke-width=".5"/>
+    <circle cx="661" cy="340" r="4" fill="none" stroke="#fff" stroke-width=".5"/>
+  </g>
+
+  <!-- ══ SHIMMER ══ -->
+  <rect class="shimmer" x="-300" y="0" width="180" height="420" rx="16" fill="url(#shimmer-grad)"/>
+
+  <!-- Particles -->
+  <circle class="p" cx="80" cy="410" r="1" fill="#00D9FF" style="animation-delay:0s"/>
+  <circle class="p" cx="250" cy="415" r=".8" fill="#7B61FF" style="animation-delay:1.5s"/>
+  <circle class="p" cx="400" cy="412" r="1" fill="#00FF88" style="animation-delay:3s"/>
+  <circle class="p" cx="550" cy="410" r=".8" fill="#FF9900" style="animation-delay:4.5s"/>
+</svg>
