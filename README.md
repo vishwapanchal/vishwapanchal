@@ -1,5 +1,6 @@
-<div align="center">
-  <a href="https://github.com/vishwapanchal">
-    <img src="./assets/dev-license-card.svg" width="700" alt="Developer License Card"/>
-  </a>
-</div>
+<a href="https://github.com/vishwapanchal/vishwapanchal">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vishwapanchal/vishwapanchal/main/dark_mode.svg">
+    <img alt="Vishwa Panchal's GitHub Profile README" src="https://raw.githubusercontent.com/vishwapanchal/vishwapanchal/main/light_mode.svg">
+  </picture>
+</a>
